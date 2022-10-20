@@ -55,4 +55,7 @@ server {
   location /errors/ {
     alias /var/www/errors/;
   }
+
+  # discourse nginx keeps the access log
+  access_log off;
 }
